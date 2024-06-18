@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    font-size: 62.5%;
+
+    --principal-text: #E1E1E6;
+    --emphasis-color: #FFF;
+    --hover-color: #02799D;
+}
+
+*{
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #020216;
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    gap: 4.3rem;
+    align-items: center;
+
+    padding: 4rem 0;
+}
+
+nav{
+    margin-left: 7.2rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5.3rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a{
+    font-size: 2.1rem;
+    line-height: 2rem;
+    color: var(--principal-text);
+
+    text-decoration: none;
+}
+
+ul li a:focus{
+    color: var(--emphasis-color);
+    font-weight: 700;
+}
+
+h1{
+    font-size: 4.8rem;
+    line-height: 125%;
+}
+
+button{
+    color: var(--emphasis-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+
+    background: none;
+    padding: 1.2rem 3.2rem;
+
+    border-radius: .5rem;
+    border: .2rem solid var(--emphasis-color);
+
+    margin-top: 2.4rem;
+
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+button:hover{
+    background-color: var(--hover-color);
+    color: var(--emphasis-color);
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 160%;
+    margin-top: 1.6rem;
+}
+
+h1,p {
+    color: var(--principal-text);
+}
+
+#homeScreen{
+    height: 100%;
+    text-align: center;
+    margin-top: 17.2rem;
+}
+
+
+#universeScreen, #explorerScreen{
+    margin-top: 6.3rem;
+    margin-left: 10.2rem;
+    max-width: 64.8rem;
+}
+
+#error{
+    text-align: center;
+    margin-top: 8%;
+}
+
+#error figure img{
+    padding-top: 3rem;
+    max-width: 15rem;
+}
